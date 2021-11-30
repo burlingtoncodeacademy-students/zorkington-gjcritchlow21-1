@@ -162,6 +162,10 @@ function enterState(newState) {
     let stateForTable = roomLookUp[currentState];
     //tools to defeat the boss
     let tools = ["stake", "garlic"];
+
+
+    //if statement for vampire boss fight COME BACK TO THIS
+
     //if check to make sure player has the tools to defeat the boss or dies
     if (currentState === "basement" && !player.inventory.includes(tools)) {
       console.log(
@@ -169,6 +173,9 @@ function enterState(newState) {
       );
       process.exit();
     }
+
+
+    
     //console log the room descriptions
     console.log(stateForTable.desc);
     //player health loss for each room they move
